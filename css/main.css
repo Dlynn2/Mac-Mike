@@ -1,0 +1,57 @@
+body{
+    background-color:#343a40;
+}
+
+.header h1{
+color: white;
+}
+
+.aboutUs img{
+  max-height: 100%;
+  max-width: 100%;
+}
+.aboutUs .column {
+  float: left;
+  width: 50%;
+  align-self: center;
+}
+.aboutUs .one{
+  float: right;
+  width: 50%;
+}
+.aboutUs .word{
+  height:fill;
+}
+.aboutUs .row{
+  padding: 0;
+}
+.aboutUs .row-one{
+  margin-bottom: 100px;
+  /* display: inline-flex; */
+  flex-direction: row-reverse;
+}
+.aboutUs .row-two{
+  margin-bottom: 100px;
+  /* display: inline-flex; */
+}
+.aboutUs .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 600px){
+.aboutUs .column {
+    width: 100%;
+  }
+.aboutUs .mission{
+  width: 100%;
+}
+.aboutUs .row-one{
+  margin-bottom: 100px;
+  display: block;
+}
+.aboutUs .row-two{
+  margin-bottom: 100px;
+  display: block;
+}
+}

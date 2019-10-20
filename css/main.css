@@ -1,7 +1,29 @@
 body{
     background-color:#343a40;
+    /* width: 90%; */
 }
-
+.logo{
+  height: 100px;
+}
+.logo img{
+  height: 100%;
+}
+.navbar-collapse{
+  justify-content: flex-end;
+}
+.navbar-nav i{
+  font-size: xx-large;
+  color: #31C5FF;
+}
+.navbar-nav li{
+  padding-left: 4em;
+}
+@media screen and (max-width: 600px){
+  .navbar-nav li {
+      padding-top: 1em;
+      padding-left: 0px;
+    }
+  }
 .header h1{
 color: white;
 }

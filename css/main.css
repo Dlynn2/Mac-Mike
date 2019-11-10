@@ -1,9 +1,14 @@
 body{
-    background-color:#343a40;
+    background-color:#000000;
+    /* background-color: currentColor;    */
     /* width: 90%; */
 }
+.content{
+  margin-left: 5vh;
+  margin-right: 5vh;
+}
 .logo{
-  height: 100px;
+  height: 10vh;
 }
 .logo img{
   height: 100%;
@@ -18,21 +23,52 @@ body{
 .navbar-nav li{
   padding-left: 4em;
 }
+.navbar{
+  top: 0px;
+  width: 100vw;
+  position: fixed;
+  background-color: black;
+  margin-bottom: 5%;
+  transition: 1s;
+  padding-right: 2.5%;
+}
 @media screen and (max-width: 600px){
+  .navbar{
+    position: unset;
+  }
   .navbar-nav li {
       padding-top: 1em;
       padding-left: 0px;
     }
   }
+.header{
+  padding-top: 20vh;
+  padding-bottom: 5vh;
+}
 .header h1{
 color: white;
 }
-
+@media screen and (max-width: 600px){
+.header{
+  padding-top: 0;
+}
+}
+.first-photo{
+  margin-bottom: 10vh;
+}
+.test{
+  width: 100%;
+  /* height: 80px; */
+}
+.aboutUs{
+  color: white;
+}
 .aboutUs img{
   max-height: 100%;
   max-width: 100%;
 }
 .aboutUs .column {
+  margin: auto;
   float: left;
   width: 50%;
   align-self: center;
@@ -40,6 +76,7 @@ color: white;
 .aboutUs .one{
   float: right;
   width: 50%;
+  margin: auto;
 }
 .aboutUs .word{
   height:fill;
@@ -48,18 +85,33 @@ color: white;
   padding: 0;
 }
 .aboutUs .row-one{
-  margin-bottom: 100px;
+  margin: auto;
+  margin-bottom: 10vh;
   /* display: inline-flex; */
   flex-direction: row-reverse;
 }
 .aboutUs .row-two{
-  margin-bottom: 100px;
+  margin: auto;
+  margin-bottom: 10vh;
   /* display: inline-flex; */
 }
 .aboutUs .row:after {
   content: "";
   display: table;
   clear: both;
+}
+.round {
+  -webkit-border-top-left-radius: 1px;
+  -webkit-border-top-right-radius: 2px;
+  -webkit-border-bottom-right-radius: 3px;
+  -webkit-border-bottom-left-radius: 4px;
+
+  -moz-border-radius-topleft: 1px;
+  -moz-border-radius-topright: 2px;
+  -moz-border-radius-bottomright: 3px;
+  -moz-border-radius-bottomleft: 4px;
+
+  border-radius: 50%;
 }
 @media screen and (max-width: 600px){
 .aboutUs .column {
@@ -68,12 +120,16 @@ color: white;
 .aboutUs .mission{
   width: 100%;
 }
-.aboutUs .row-one{
+/* .aboutUs .row-one{
   margin-bottom: 100px;
   display: block;
 }
 .aboutUs .row-two{
   margin-bottom: 100px;
   display: block;
+} */
 }
+.footer{
+  height: 150px;
+  background-color: #343a40;
 }
